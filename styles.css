@@ -1,0 +1,126 @@
+.body{
+    border: 5px;
+}
+.container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+    border: 30px solid rgb(224, 217, 217);
+}
+.header{
+    background-color: solid rgb(224, 217, 217);
+    border: 5px;
+    border-color: black;
+    padding: 10px;
+    width: 100%;
+}
+div.firstContainer{
+    justify-content: space-evenly;
+    align-items: baseline;
+    text-align: start;
+}
+#creditcard{
+    width: 85%;
+    border-radius: 5px;
+
+}
+#creditcardcontainer{
+    padding-left: 30px;
+    padding-right: 0px;
+}
+#cvccontainer{
+    padding: 0px 5px 0px 0px;
+}
+#cvc{
+    width: 90%;
+    border-radius: 5px;
+}
+#dollar{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+
+}
+#amount{
+    width: 90%;
+    border-radius: 5px;
+    display: inline-flex;
+    
+}
+#amounttext{
+    padding: 0px 0px 2px 2px;
+}
+#firstname{
+    width: 96%;
+    border-radius: 5px;
+}
+#city{
+    width: 96%;
+    border-radius: 5px;
+}
+#lastnametext{
+    padding: 3px 5px 0px 0px;
+}
+#lastname{
+    width: 99%;
+    border-radius: 5px;
+
+}
+#statetext{
+    padding: 5px 5px 5px 0px;
+}
+#state{
+    width: 100%;
+    border-radius: 5px;
+    margin-right: 60px;
+}
+#statecontainer{
+    padding: 5px 5px 5px 15px;
+}
+#postalcodetext{
+    padding: 5px 0px 5px 13px;
+}
+#postalcode{
+    width: 90%;
+    border-radius: 5px;
+    align-self: auto;
+    margin-left: 15px;
+}
+#postalcodecontainer{
+    padding: 5px 5px 5px 20px;
+}
+#messagetext{
+    margin: 10px 0px 0px 0px;
+}
+#message{
+    width: 98%;
+    border-radius: 5px;
+    display: flex;
+
+}
+div.bigpapa{
+    display: flex;
+}
+div.thirdcontainer{
+    flex: 1;
+    margin: 15px 0px 10px;
+}
+div.fourthcontainer{
+    flex: 1;
+    margin: 15px 0px 10px;
+}
+.place{
+    display: flex;
+}
+.place-right{
+    margin-left: 15px;
+}
+.cardType{
+    width: 55%;
+    border-radius: 5px;
+}
+label{
+    font-weight:500;
+}

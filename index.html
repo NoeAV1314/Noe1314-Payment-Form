@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>HTML 5 payments form</title>
+
+</head>
+
+<!--No he podido añadir bien los bordes :( )-->
+<body>
+  <div class="container">
+    <form action="get" class="d-flex justify-content-center">
+      <div class="container m-2 rounded-2">
+        <div class="header">
+          <h1>Payment form example</h1>
+          <div class="alert alert-danger" role="alert">
+            Some fields are missing
+          </div>
+        </div>
+
+        <div class="firstContainer">
+          <div class="row align-items-center">
+            <div class="col-5" id="creditcardcontainer">
+              <label for="inputcreditCard" class="col-form-label">Credit card # </label>
+              <input type="credit card number" id="creditcard" class="form-control" placeholder="XXXXXXXXXXXXXXXX"
+                aria-describedby="passwordHelpInline" required>
+            </div>
+
+
+            <div class="col-3" id="cvccontainer">
+              <label for="inputCVC" class="col-form-label">CVC #</label>
+              <input type="CVC#" id="cvc" class="form-control" placeholder="0000" aria-describedby="passwordHelpInline"
+                required>
+            </div>
+
+            <div class="col-auto" style="height: 50px;">
+              <label for="inputAmount" class="row-form-label" id="amounttext">Amount:</label>
+              <div class="row align-items-center">
+                <div class="col-6 col-md-1"><span class="fw-bold fs-5" id="dollar"> $ </span></div>
+                <div class="col-8 col-md-10"><input type="Amount" class="form-control" id="amount" placeholder="Amount"
+                    required aria-label="Amount (to the nearest dollar)"> </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--no puedo pegarlos, no se el como. Consejos?-->
+        &nbsp;
+
+
+        <div class="bigpapa">
+        <div class="thirdcontainer">
+          <div class="row" style="padding-left: 20px;">
+            <div class="col-md-10">
+              <fieldset>
+                <div class="col">
+                  <div class="mb-3">
+                    <label for="inputFirstname" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="firstname" placeholder="First name"
+                      aria-label="First name">
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="mb-3">
+                    <label for="inputCity" class="form-label">City</label>
+                    <input type="text" class="form-control" id="city">
+                  </div>
+                </div>
+                <div>
+                  <p class="fw-medium">We accept: </p>
+                  <div class="cardType bg-dark-subtle p-2">
+                    <input type="radio" name="cardType" id="visa" value="visa"><i class="fa-brands fa-cc-visa m-1"></i>
+                    <input type="radio" name="cardType" id="master" value="master"> <i
+                      class="fa-brands fa-cc-mastercard m-1"></i>
+                    <input type="radio" name="cardType" id="amex" value="amex"> <i class="fa-brands fa-cc-amex m-1"></i>
+                    <input type="radio" name="cardType" id="discover" value="discover"> <i
+                      class="fa-brands fa-cc-discover m-1"></i>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+
+        &nbsp;
+
+
+        <div class="fourthcontainer">
+          <div class="row">
+            <div class="col-md-11">
+              <label for="inputLastname" class="form-label" id="lastnametext">Last name</label>
+              <input type="text" class="form-control" id="lastname" placeholder="Last name" aria-label="Last name"
+                required>
+            </div>
+
+            <div class="col-md-4" id="statecontainer">
+              <label for="selectState" class="col-form-label" id="statetext">State</label>
+              <select class="form-select" id="state" placeholder="Pick a state" aria-label="Default select example"
+                required>
+                <option selected> Pick a state </option>
+                <option value="1">Bolzano </option>
+                <option value="2">Pavia </option>
+                <option value="3">Salerno </option>
+                <option value="4">Brescia </option>
+                <option value="5">Trentino </option>
+                <option value="6">Lecco</option>
+                <option value="7">Cuneo </option>
+              </select>
+            </div>
+
+            <div class="col-4" id="postalcodecontainer">
+              <label for="inputPostalcode" class="col-form-label" id="postalcodetext">Postal code</label>
+              <input type="Postalcode" id="postalcode" class="form-control" aria-describedby="passwordHelpInline"
+                required>
+            </div>
+            &nbsp;
+            &nbsp;
+            <div class="mb-3">
+              <label class="mb-1" id="messagetext">Message:</label> <br>
+              <textarea name="message" id="message" cols="55" rows="7"></textarea>
+              <span class="fw-lighter fs-6">add any notes here</span>
+            </div>
+            </fieldset>
+          </div>
+        </div>
+      </div>
+
+        <div class="footer">
+          <div class="row bg-body-secondary">
+            <div class="col ">
+              <div class="footer bg-body-secondary float-end mb-2 mt-2">
+                <button type="submit" class="btn btn-secondary me-2">Cancel</button>
+                <button type="submit" class="btn btn-primary me-2">Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+
+  </div>
+  <script src="https://kit.fontawesome.com/692eab8780.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
